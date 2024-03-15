@@ -1,0 +1,24 @@
+{
+	"logInCredential":{
+		"emailAddsPhoneNumber":"9124564060",
+		"password":"Surya@123456"
+	},
+
+	"createNewAccountDetails":{
+		"FirstName":"ALEXA",
+		"surname":"RIHANA",
+		"emailOrMobileNumber":"8093151424",
+		"newPassword":"example@12345"
+	},
+
+	"EmailOrPhoneNumber":{
+		"emailAddsPhoneNumber":"9124564060"
+	},
+	"password":{
+		"password":"abcde@12345"
+	},
+	"credentials":{
+		"Username":"9514048813",
+		"Password":"shibu04@Facebook"
+	}
+}
