@@ -68,7 +68,9 @@ public class FaceBookPage extends StartupPage {
 	By accountIcon=By.xpath("");
 	By leavePageButton=By.xpath("");
 	By LogoutButton=By.xpath("");
-
+	By updateProfilePictureCameraIcon = By.xpath(""); 
+	By uploadPhotoButton = By.xpath(""); 
+	By notificationLink=By.xpath("");
 
 
 	public FaceBookPage(WebDriver driver) {
@@ -87,6 +89,7 @@ public class FaceBookPage extends StartupPage {
 	 */
 	public String validateFacebookTitleOfLoginPage() throws Exception {
 		return null;
+
 	}
 
 	/**@test2
@@ -97,34 +100,32 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean verifyPresenceOfALlFields() throws Exception {
-		
 		return null;
 	}
 
 	/**@test3
 	 * about this method validateErrorMessageWithoutProvideAnyCredentials() 
 	 * @param : null
-	 * @description : it is getting the error message and validate the error message ,
+	 * @description : it is getting the error message if login button clicked without passing email and password
 	 * @return : errorMessage as string type
 	 * @author : Yaksha
 	 */
 	public String validateErrorMessageWithoutProvideAnyCredentials() throws Exception {
-		
 		return null;
 	}
 
-	/**@test4
+	/**
 	 * about this method enterEmailIdOrPhoneNumberInLoginPage() 
 	 * @param : Map<String, String> expectedData
 	 * @description : enter EmailIdOrPhoneNumber in the EmailIdOrPhoneNumber text field of the login page as per json expected data ,
 	 * @return : null
 	 * @author : Yaksha
 	 */
-	public void enterEmailIdOrPhoneNumberInLoginPage(Map<String, String> expectedData) throws Exception {
-		
+	public boolean enterEmailIdOrPhoneNumberInLoginPage(Map<String, String> expectedData) throws Exception {
+		return false;
 	}
 
-	/**@test5
+	/**@test4
 	 * about this method validateErrorMessageWithoutProvidePassword() 
 	 * @param : null
 	 * @description : it is getting the error message and validate the error message ,
@@ -135,18 +136,18 @@ public class FaceBookPage extends StartupPage {
 		return null;
 	}
 
-	/**@test6
+	/**
 	 * about this method enterPassword() 
 	 * @param : Map<String, String> expectedData
 	 * @description : enter password in the password text field of the login page as per json expected data ,
 	 * @return : null
 	 * @author : Yaksha
 	 */
-	public void enterPasswordInLoginPage(Map<String, String> expectedData) throws Exception {
-		
+	public boolean enterPasswordInLoginPage(Map<String, String> expectedData) throws Exception {
+		return false;
 	}
 
-	/**@test7
+	/**@test5
 	 * about this method validateErrorMessageWithoutProvideEmailOrPhoneNumber() 
 	 * @param : null
 	 * @description : it is getting the error message and validate the error message ,
@@ -154,12 +155,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public String validateErrorMessageWithoutProvideEmailOrPhoneNumber() throws Exception {
-		
 		return null;
-
 	}
 
-	/**@test8
+	/**@test6
 	 * about this method goBackToLogInPageAndValidateCreateNewAccountButtonIsPresentOrNot() 
 	 * @param : null
 	 * @description : here go back to the login page and verify whether the NewAccountButton element is present or not 
@@ -167,11 +166,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean goBackToLogInPageAndValidateCreateNewAccountButtonIsPresentOrNot() throws Exception {
-		
 		return null;
 	}
 
-	/**@test9
+	/**@test7
 	 * about this method validateNavigateToTheSignUpPage() 
 	 * @param : null
 	 * @description : click on the createnew account and validate the sign up page title ,
@@ -179,11 +177,11 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public String validateNavigateToTheSignUpPage() throws Exception {
-		
 		return null;
+
 	}
 
-	/**@test10
+	/**@test8
 	 * about this method verifyPresenceOfAllFieldsPresentInTheSignUpPage() 
 	 * @param : null
 	 * @description : verify all fields are present in the signup page or not ,
@@ -191,11 +189,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean verifyPresenceOfAllFieldsPresentInTheSignUpPage() throws Exception {
-		
 		return null;
 	}
 
-	/**@test11
+	/**@test9
 	 * about this method enterDataInFirstNameFieldSignupPage() 
 	 * @param : Map<String, String>
 	 * @description : Enter data in the first name text field of the Signup page,
@@ -203,12 +200,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public  String enterDataInFirstNameFieldSignupPage( Map<String, String> expectedData) throws Exception {
-		
 		return null;
-
 	}
 
-	/**@test12
+	/**@test10
 	 * about this method enterDataInSignUpPage() 
 	 * @param : Map<String, String>
 	 * @description : enter data in the  SignUpPage page,
@@ -216,12 +211,11 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 *
 	 */
-	public  void enterDataInSignUpPage( Map<String, String> expectedData) throws Exception {
-		
-		
+	public  boolean enterDataInSignUpPage( Map<String, String> expectedData) throws Exception {
+		return false;
 	}
 
-	/**@test13
+	/**@test11
 	 * about this method selectDateFromDateDropdownAndVerifyDateDropdownIsPrsentOrNot() 
 	 * @param : null
 	 * @description : it is select any date from date dropdown and verify Date Dropdown is present in current page or not 
@@ -229,11 +223,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean selectDateFromDateDropdownAndVerifyDateDropdownIsPrsentOrNot() throws Exception {
-		
 		return null;
 	}
 
-	/**@test14
+	/**@test12
 	 * about this method selectAnyMonthFromMonthDropdownAndVerifyMonthDropdownIsPrsentOrNot() 
 	 * @param : null
 	 * @description : it is select any month from month dropdown and verify month Dropdown is present in current page or not 
@@ -241,11 +234,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean selectAnyMonthFromMonthDropdownAndVerifyMonthDropdownIsPrsentOrNot() throws Exception {
-				
 		return null;
 	}
 
-	/**@test15
+	/**@test13
 	 * about this method selectAnyYearFromYearDropdownAndVerifyYearDropdownIsPrsentOrNot() 
 	 * @param : null
 	 * @description : it is select any Year from Year dropdown and verify Year Dropdown is present in current page or not 
@@ -253,11 +245,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean selectAnyYearFromYearDropdownAndVerifyYearDropdownIsPrsentOrNot() throws Exception {
-		
 		return null;
 	}
 
-	/**@test16
+	/**@test14
 	 * about this method selectCustomRadioButtonAndVerifyCustomRadioButtonIsPrsentOrNot() 
 	 * @param : null
 	 * @description : it is select "custom" radio button and verify "custom" radio button is present in current page or not 
@@ -265,12 +256,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean selectCustomRadioButtonAndVerifyCustomRadioButtonIsPrsentOrNot() throws Exception {
-		
-		
 		return null;
 	}
 
-	/**@test17
+	/**@test15
 	 * about this method selectAnyOptionFromYourPronouDropdownAndVerifyYourPronouDropdownIsPrsentOrNot() 
 	 * @param : null
 	 * @description : it is select any option from "SelectYourPronoun" dropdown and verify "SelectYourPronoun" is present in current page or not 
@@ -278,11 +267,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean selectAnyOptionFromYourPronouDropdownAndVerifyYourPronouDropdownIsPrsentOrNot() throws Exception {
-		
 		return null;
 	}
 
-	/**@test18
+	/**@test16
 	 * about this method enterValueInGenderOptionalTextFieldAndValidateGenderOptionalTextFieldIsPresentOrNot() 
 	 * @param : null
 	 * @description : send the value in In Gender Optional TextField and verify Gender Optional TextField is present or not
@@ -290,12 +278,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean enterValueInGenderOptionalTextFieldAndValidateGenderOptionalTextFieldIsPresentOrNot(Map<String, String> expectedData) throws Exception {
-		
-		
 		return null;
 	}
 
-	/**@test19
+	/**@test17
 	 * about this method selectFemaleRadioButtonAndVerifyFemaleRadioButtonIsPrsentOrNot() 
 	 * @param : null
 	 * @description : it is select "Female" radio button and verify "Female" radio button is present in current page or not 
@@ -303,11 +289,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean selectFemaleRadioButtonAndVerifyFemaleRadioButtonIsPrsentOrNot() throws Exception {
-		
 		return null;
 	}
 
-	/**@test20
+	/**@test18
 	 * about this method selectMaleRadioButtonAndVerifyMaleRadioButtonIsPrsentOrNot() 
 	 * @param : null
 	 * @description : it is select "Male" radio button and verify "male" radio button is present in current page or not 
@@ -315,11 +300,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean selectMaleRadioButtonAndVerifyMaleRadioButtonIsPrsentOrNot() throws Exception {
-		
 		return null;
 	}
 
-	/**@test21
+	/**@test19
 	 * about this method verifyAllprsenceOfFieldAfterCloseTheSignupPage() 
 	 * @param : null
 	 * @description : close the sign up page and verify all fields is present in current page or not 
@@ -327,12 +311,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean verifyAllprsenceOfFieldAfterCloseTheSignupPage() throws Exception {
-		
 		return null;
-
 	}
 
-	/**@test22
+	/**@test20
 	 * about this method enterValidEmail_PasswordInTextFieldAndVerifyLoginButtonIsPresentOrNot() 
 	 * @param : Map<String, String> expectedData (getting the data from the expected Json file
 	 * @description : enter the username and password in the corresponding Text filed and verify login button is present or not
@@ -340,11 +322,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean enterValidEmail_PasswordInTextFieldAndVerifyLoginButtonIsPresentOrNot(Map<String, String> expectedData) throws Exception {
-		
 		return null;
 	}
 
-	/**@Test23
+/**@Test21
 	 * about this method loginToFacebookByGivenValidCredetial() 
 	 * @param : Map<String, String>
 	 * @description : fill emailAddsPhoneNumberTextbox then enter data in passwordTextbox and click on login button
@@ -352,11 +333,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public boolean loginToFacebookByGivenValidCredetial(Map<String, String> expectedData) throws Exception {
-		
 		return false;
 	}
 
-	/**@Test24
+	/**@Test22
 	 * about this method afterLoggedinValidateTheTitleOfFacebookHomePage() 
 	 * @param : null
 	 * @description : print the title of the home page after logged in and verify the title of the home page
@@ -364,11 +344,11 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public String afterLoggedinValidateTheTitleOfFacebookHomePage() throws Exception {
-		
 		return null;
+
 	}
 
-	/**@Test25
+	/**@Test23
 	 * about this method clickonProfileIconAndValidateTheProfileName() 
 	 * @param : null
 	 * @description :click on the profile and validate the profile name
@@ -376,35 +356,33 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public String clickonProfileAndValidateTheProfileName() throws Exception {
-		
 		return null;
+
 	}
 
-	/**@Test26
+	/**@Test24
 	 * about this method clickOnUpdateProfilePicture_and_UploadProfilePicture() 
 	 * @param : String
 	 * @description :click on update profile picture and click on upload photo and upload photo then click on save button
 	 * @return : boolean
 	 * @author : Yaksha
 	 */
-	public boolean clickOnUpdateProfilePicture_and_UploadProfilePicture(String pathOfTheFile) throws Exception {
-		
+	public boolean clickOnUpdateProfilePictureAndUploadProfilePicture(String pathOfTheFile) throws Exception {
 		return false;
 	}
 
-	/**@Test27
+	/**@Test25
 	 * about this method clickOnEditProfileAndFillTheDetailInBioSection() 
 	 * @param : Map<String, String> 
 	 * @description :Click on edit profile then click on the add button inside the bio section and enter data in bio section then click on "X" button.
 	 * @return : boolean
 	 * @author : Yaksha
 	 */
-	public boolean clickOnEditProfileAndFillTheDetailInBioSection(Map<String, String> expectedData) throws Exception {
-		
+	public boolean clickOnEditProfileAndFillTheDetaFilInBioSection(Map<String, String> expectedData) throws Exception {
 		return false;
 	}
 
-	/**@Test28
+	/**@Test26
 	 * about this method clickOnPostsandGoToIntroSectionAndAddDetailsInAddBio() 
 	 * @param : String
 	 * @description :Click on edit profile then click on the add button inside the bio section and enter data in bio section then click on "X" button.
@@ -412,12 +390,11 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public boolean clickOnPostsandGoToIntroSectionAndAddDetailsInAddBio(Map<String, String> expectedData) throws Exception {
-		
 		return false;
 
 	}
 
-	/**@Test29
+	/**@Test27
 	 * about this method clickOnAboutAndGoIntoOverviewAndAddUniversity() 
 	 * @param : Map<String, String>
 	 * @description :Click on about section then go to overview section then click on addUniversityIcon then enter data in the school text field.
@@ -425,13 +402,12 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public boolean clickOnAboutAndGoIntoOverviewAndAddUniversity(Map<String, String> expectedData) throws Exception {
-		
 		return false;
 
 	}
 
 
-	/**@Test30
+	/**@Test28
 	 * about this method clickonAddWorkplaceAndAddCompanyName() 
 	 * @param : Map<String, String>
 	 * @description :Click on about section then go to overview section then click on addUniversityIcon then enter data in the school text field.
@@ -439,11 +415,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public boolean clickonAddWorkplaceAndAddCompanyName(Map<String, String> expectedData) throws Exception {
-		
 		return false;
 
 	}
-	/**@Test31
+	/**@Test29
 	 * about this method clickOnAddHomeTownandAddHomeTown() 
 	 * @param : Map<String, String>
 	 * @description :Refresh the page and click on upper arrow button to hide the you may know section 
@@ -452,12 +427,11 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public boolean clickOnAddHomeTownandAddHomeTown(Map<String, String> expectedData) throws Exception {
-		
 		return false;
 
 	}
 
-	/**@Test32
+	/**@Test30
 	 * about this method clickOnAddCurrentCityandAddCurrentCity() 
 	 * @param : Map<String, String>
 	 * @description :Refresh the page and click on upper arrow button to hide the you may know section 
@@ -466,12 +440,11 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public boolean clickOnAddCurrentCityandAddCurrentCity(Map<String, String> expectedData) throws Exception {
-		
 		return false;
 
 	}
 
-	/**@Test33
+	/**@Test31
 	 * about this method clickOnAddSecondarySchoolandAddSchool() 
 	 * @param : Map<String, String>
 	 * @description :Refresh the page and click on upper arrow button to hide the you may know section 
@@ -480,12 +453,11 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public boolean clickOnAddSecondarySchoolandAddSchool(Map<String, String> expectedData) throws Exception {
-		
 		return false;
 
 	}
 
-	/**@Test34
+	/**@Test32
 	 * about this method clickOnAddRelationshipStatusandAddRelationshipStatusAsSingle() 
 	 * @param : Map<String, String>
 	 * @description :Refresh the page and click on upper arrow button to hide the you may know section 
@@ -494,12 +466,11 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public boolean clickOnAddRelationshipStatusandAddRelationshipStatusAsSingle(Map<String, String> expectedData) throws Exception {
-		
 		return false;
 
 	}
 
-	/**@Test35
+	/**@Test33
 	 * about this method gotoThePreviousPageAndClickOnAccount() 
 	 * @param : null
 	 * @description : going to the previous page then click on leave page button and click on Account icon which is present at the top right corner
@@ -507,11 +478,9 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public boolean gotoThePreviousPageAndClickOnAccount() throws Exception {
-		
 		return false;
-
 	}
-	/**@Test36
+	/**@Test34
 	 * about this method clickOnTheLogoutButton() 
 	 * @param : null
 	 * @description : Click on the logout button 
@@ -519,9 +488,10 @@ public class FaceBookPage extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public boolean clickonTheLogoutButton() throws Exception {
-		
 		return false;
-
 	}
+
+
+	
 
 }

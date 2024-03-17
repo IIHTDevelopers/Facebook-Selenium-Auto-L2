@@ -185,7 +185,7 @@ public class Facebook_AutomationTest extends AppTestBase {
 		Assert.assertTrue(LocatorsFactoryInstance.customRadioButton(driver).isDisplayed(), " male radio button is not present in the signUp page, Please check manually");	
 	}
 	
-	@Test(priority = 19, groups = {"sanity"}, description="close the \"signup\" page and verify the All Fields prsense in The Login Page or not")
+	@Test(priority = 19, groups = {"sanity"}, description="close the \"signup\" page and verify the All Fields present in The Login Page or not")
 	public void verifyAllprsenceOfFieldAfterCloseTheSignupPage() throws Exception {	
 		FaceBookPageInstance = new FaceBookPage(driver);
 		Assert.assertTrue(FaceBookPageInstance.verifyAllprsenceOfFieldAfterCloseTheSignupPage(), "Any of the elememt is not present, please check manually");
@@ -200,7 +200,7 @@ public class Facebook_AutomationTest extends AppTestBase {
 		Assert.assertTrue(FaceBookPageInstance.enterValidEmail_PasswordInTextFieldAndVerifyLoginButtonIsPresentOrNot(expectedData), "login button is not present, please check manually");
 		Assert.assertTrue(LocatorsFactoryInstance.createNewAccountLink(driver).isDisplayed(), " login button is not present in the signUp page, Please check manually");
 	}
-	
+
 	@Test(priority = 21, groups = {"sanity"}, description="login the facebook by given valid credetial")
 	public void loginTheFacebookByGivenValidCredetial() throws Exception {
 		FaceBookPageInstance = new FaceBookPage(driver);
@@ -227,7 +227,9 @@ public class Facebook_AutomationTest extends AppTestBase {
 	@Test(priority = 24, groups = {"sanity"}, description="Upload a profile Picture ")
 	public void clickOnUpdateProfilePictureAndUploadProfilePicture() throws Exception {
 		FaceBookPageInstance = new FaceBookPage(driver);
-	    Assert.assertTrue(FaceBookPageInstance.clickOnUpdateProfilePicture_and_UploadProfilePicture(null),"Failed to Upload profile picture, please check manually");
+		String expectedDataFilePath = testDataFilePath+"expected_data.json";
+		Map<String, String> expectedData = new FileOperations().readJson(expectedDataFilePath, "PathOfTheImage");
+		Assert.assertTrue(FaceBookPageInstance.clickOnUpdateProfilePictureAndUploadProfilePicture(expectedData.get("imagePath")), "file upload failed, please check manually");	
 		Assert.assertTrue(LocatorsFactoryInstance.editProfileButtonIsPresent(driver).isDisplayed(), "Edit profile button is not present, Please check manually");	
 	}
 	@Test(priority = 25, groups = {"sanity"}, description="click On Edit Profile And fill The Detail In Bio Section")
@@ -235,7 +237,7 @@ public class Facebook_AutomationTest extends AppTestBase {
 		FaceBookPageInstance = new FaceBookPage(driver);
 		String expectedDataFilePath = testDataFilePath+"expected_data.json";
 		Map<String, String> expectedData1 = new FileOperations().readJson(expectedDataFilePath, "logInCredential");
-	    Assert.assertTrue(FaceBookPageInstance.clickOnEditProfileAndFillTheDetailInBioSection(expectedData1),"Not able to add the bio section, please check manually");
+	    Assert.assertTrue(FaceBookPageInstance.clickOnEditProfileAndFillTheDetaFilInBioSection(expectedData1),"Not able to add the bio section, please check manually");
 		Assert.assertTrue(LocatorsFactoryInstance.addToStoryButtonIsPresent(driver).isDisplayed(), "addToStory Button button is not present, Please check manually");	
 	}
 	@Test(priority = 26, groups = {"sanity"}, description="click On Posts and Go to Intro Section and Add Details In Add Bio")
@@ -307,6 +309,7 @@ public class Facebook_AutomationTest extends AppTestBase {
 	    Assert.assertTrue(FaceBookPageInstance.clickonTheLogoutButton(),"logout failed, please check manually");
 		Assert.assertTrue(LocatorsFactoryInstance.getEmailAddsPhoneNumberTextfield(driver).isDisplayed(), "Login button is not present, Please check manually");	
 	}
+
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		System.out.println("before closing the browser");
