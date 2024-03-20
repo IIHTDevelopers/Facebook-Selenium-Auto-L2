@@ -73,6 +73,15 @@ public class FaceBookPage extends StartupPage {
 	By notificationLink=By.xpath("");
 
 
+	
+	By errorMessageWithoutCredential1 = By.xpath(""); 
+	
+	By withoutPasswordErrorMessage1 = By.xpath("");
+
+
+	
+
+
 	public FaceBookPage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this); // Initialize Page Factory
@@ -363,11 +372,11 @@ public class FaceBookPage extends StartupPage {
 	/**@Test24
 	 * about this method clickOnUpdateProfilePicture_and_UploadProfilePicture() 
 	 * @param : String
-	 * @description :click on update profile picture and click on upload photo and upload photo then click on save button
+	 * @description :click on update profile picture and click on upload photo and upload photo then click on save button, provide file path manually
 	 * @return : boolean
 	 * @author : Yaksha
 	 */
-	public boolean clickOnUpdateProfilePictureAndUploadProfilePicture(String pathOfTheFile) throws Exception {
+	public boolean clickOnUpdateProfilePictureAndUploadProfilePicture() throws Exception {
 		return false;
 	}
 
