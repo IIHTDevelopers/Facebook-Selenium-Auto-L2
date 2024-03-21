@@ -230,7 +230,7 @@ public class Facebook_AutomationTest extends AppTestBase {
 		FaceBookPageInstance = new FaceBookPage(driver);
 		String expectedDataFilePath = testDataFilePath+"expected_data.json";
 		Map<String, String> expectedData = new FileOperations().readJson(expectedDataFilePath, "PathOfTheImage");
-		Assert.assertTrue(FaceBookPageInstance.clickOnUpdateProfilePictureAndUploadProfilePicture(), "file upload failed, please check manually");	
+		Assert.assertTrue(FaceBookPageInstance.clickOnUpdateProfilePictureAndUploadProfilePicture(System.getProperty("user.dir") + "\\testImage\\uploadImage.png"), "file upload failed, please check manually");	
 		Assert.assertTrue(LocatorsFactoryInstance.editProfileButtonIsPresent(driver).isDisplayed(), "Edit profile button is not present, Please check manually");	
 	}
 	@Test(priority = 25, groups = {"sanity"}, description="click On Edit Profile And fill The Detail In Bio Section")
