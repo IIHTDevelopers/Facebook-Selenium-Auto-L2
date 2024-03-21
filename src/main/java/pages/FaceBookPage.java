@@ -372,11 +372,11 @@ public class FaceBookPage extends StartupPage {
 	/**@Test24
 	 * about this method clickOnUpdateProfilePicture_and_UploadProfilePicture() 
 	 * @param : String
-	 * @description :click on update profile picture and click on upload photo and upload photo then click on save button, provide file path manually
+	 * @description :click on update profile picture and click on upload photo and upload photo then click on save button.
 	 * @return : boolean
 	 * @author : Yaksha
 	 */
-	public boolean clickOnUpdateProfilePictureAndUploadProfilePicture() throws Exception {
+	public boolean clickOnUpdateProfilePictureAndUploadProfilePicture(String filePath) throws Exception {
 		return false;
 	}
 
