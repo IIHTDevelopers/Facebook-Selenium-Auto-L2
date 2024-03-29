@@ -257,73 +257,19 @@ public class FaceBookPage extends StartupPage {
 		return null;
 	}
 
+	
 	/**@test14
-	 * about this method selectCustomRadioButtonAndVerifyCustomRadioButtonIsPrsentOrNot() 
-	 * @param : null
-	 * @description : it is select "custom" radio button and verify "custom" radio button is present in current page or not 
-	 * @return : true
-	 * @author : Yaksha
-	 */
-	public Boolean selectCustomRadioButtonAndVerifyCustomRadioButtonIsPrsentOrNot() throws Exception {
-		return null;
-	}
-
-	/**@test15
-	 * about this method selectAnyOptionFromYourPronouDropdownAndVerifyYourPronouDropdownIsPrsentOrNot() 
-	 * @param : null
-	 * @description : it is select any option from "SelectYourPronoun" dropdown and verify "SelectYourPronoun" is present in current page or not 
-	 * @return : true
-	 * @author : Yaksha
-	 */
-	public Boolean selectAnyOptionFromYourPronouDropdownAndVerifyYourPronouDropdownIsPrsentOrNot() throws Exception {
-		return null;
-	}
-
-	/**@test16
-	 * about this method enterValueInGenderOptionalTextFieldAndValidateGenderOptionalTextFieldIsPresentOrNot() 
-	 * @param : null
-	 * @description : send the value in In Gender Optional TextField and verify Gender Optional TextField is present or not
-	 * @return : true
-	 * @author : Yaksha
-	 */
-	public Boolean enterValueInGenderOptionalTextFieldAndValidateGenderOptionalTextFieldIsPresentOrNot(Map<String, String> expectedData) throws Exception {
-		return null;
-	}
-
-	/**@test17
-	 * about this method selectFemaleRadioButtonAndVerifyFemaleRadioButtonIsPrsentOrNot() 
-	 * @param : null
-	 * @description : it is select "Female" radio button and verify "Female" radio button is present in current page or not 
-	 * @return : true
-	 * @author : Yaksha
-	 */
-	public Boolean selectFemaleRadioButtonAndVerifyFemaleRadioButtonIsPrsentOrNot() throws Exception {
-		return null;
-	}
-
-	/**@test18
-	 * about this method selectMaleRadioButtonAndVerifyMaleRadioButtonIsPrsentOrNot() 
-	 * @param : null
-	 * @description : it is select "Male" radio button and verify "male" radio button is present in current page or not 
-	 * @return : true
-	 * @author : Yaksha
-	 */
-	public Boolean selectMaleRadioButtonAndVerifyMaleRadioButtonIsPrsentOrNot() throws Exception {
-		return null;
-	}
-
-	/**@test19
-	 * about this method verifyAllprsenceOfFieldAfterCloseTheSignupPage() 
+	 * about this method verifyAllpresentOfFieldAfterCloseTheSignupPage() 
 	 * @param : null
 	 * @description : close the sign up page and verify all fields is present in current page or not 
 	 * @return : true
 	 * @author : Yaksha
 	 */
-	public Boolean verifyAllprsenceOfFieldAfterCloseTheSignupPage() throws Exception {
+	public Boolean verifyAllpresentOfFieldAfterCloseTheSignupPage() throws Exception {
 		return null;
 	}
 
-	/**@test20
+	/**@test15
 	 * about this method enterValidEmail_PasswordInTextFieldAndVerifyLoginButtonIsPresentOrNot() 
 	 * @param : Map<String, String> expectedData (getting the data from the expected Json file
 	 * @description : enter the username and password in the corresponding Text filed and verify login button is present or not
@@ -334,18 +280,18 @@ public class FaceBookPage extends StartupPage {
 		return null;
 	}
 
-/**@Test21
-	 * about this method loginToFacebookByGivenValidCredetial() 
+/**@Test16
+	 * about this method loginToFacebookByGivenValidCredential() 
 	 * @param : Map<String, String>
 	 * @description : fill emailAddsPhoneNumberTextbox then enter data in passwordTextbox and click on login button
 	 * @return : Boolean
 	 * @author : Yaksha
 	 */
-	public boolean loginToFacebookByGivenValidCredetial(Map<String, String> expectedData) throws Exception {
+	public boolean loginToFacebookByGivenValidCredential(Map<String, String> expectedData) throws Exception {
 		return false;
 	}
 
-	/**@Test22
+	/**@Test17
 	 * about this method afterLoggedinValidateTheTitleOfFacebookHomePage() 
 	 * @param : null
 	 * @description : print the title of the home page after logged in and verify the title of the home page
@@ -357,7 +303,7 @@ public class FaceBookPage extends StartupPage {
 
 	}
 
-	/**@Test23
+	/**@Test18
 	 * about this method clickonProfileIconAndValidateTheProfileName() 
 	 * @param : null
 	 * @description :click on the profile and validate the profile name
@@ -369,7 +315,7 @@ public class FaceBookPage extends StartupPage {
 
 	}
 
-	/**@Test24
+	/**@Test19
 	 * about this method clickOnUpdateProfilePicture_and_UploadProfilePicture() 
 	 * @param : String
 	 * @description :click on update profile picture and click on upload photo and upload photo then click on save button.
@@ -380,106 +326,9 @@ public class FaceBookPage extends StartupPage {
 		return false;
 	}
 
-	/**@Test25
-	 * about this method clickOnEditProfileAndFillTheDetailInBioSection() 
-	 * @param : Map<String, String> 
-	 * @description :Click on edit profile then click on the add button inside the bio section and enter data in bio section then click on "X" button.
-	 * @return : boolean
-	 * @author : Yaksha
-	 */
-	public boolean clickOnEditProfileAndFillTheDetaFilInBioSection(Map<String, String> expectedData) throws Exception {
-		return false;
-	}
+	
 
-	/**@Test26
-	 * about this method clickOnPostsandGoToIntroSectionAndAddDetailsInAddBio() 
-	 * @param : String
-	 * @description :Click on edit profile then click on the add button inside the bio section and enter data in bio section then click on "X" button.
-	 * @return : boolean
-	 * @author : Yaksha
-	 */
-	public boolean clickOnPostsandGoToIntroSectionAndAddDetailsInAddBio(Map<String, String> expectedData) throws Exception {
-		return false;
-
-	}
-
-	/**@Test27
-	 * about this method clickOnAboutAndGoIntoOverviewAndAddUniversity() 
-	 * @param : Map<String, String>
-	 * @description :Click on about section then go to overview section then click on addUniversityIcon then enter data in the school text field.
-	 * @return : boolean
-	 * @author : Yaksha
-	 */
-	public boolean clickOnAboutAndGoIntoOverviewAndAddUniversity(Map<String, String> expectedData) throws Exception {
-		return false;
-
-	}
-
-
-	/**@Test28
-	 * about this method clickonAddWorkplaceAndAddCompanyName() 
-	 * @param : Map<String, String>
-	 * @description :Click on about section then go to overview section then click on addUniversityIcon then enter data in the school text field.
-	 * @return : boolean
-	 * @author : Yaksha
-	 */
-	public boolean clickonAddWorkplaceAndAddCompanyName(Map<String, String> expectedData) throws Exception {
-		return false;
-
-	}
-	/**@Test29
-	 * about this method clickOnAddHomeTownandAddHomeTown() 
-	 * @param : Map<String, String>
-	 * @description :Refresh the page and click on upper arrow button to hide the you may know section 
-	 * 				then click on addHomeTownButton and fill data in the homeTownTextField. 
-	 * @return : boolean
-	 * @author : Yaksha
-	 */
-	public boolean clickOnAddHomeTownandAddHomeTown(Map<String, String> expectedData) throws Exception {
-		return false;
-
-	}
-
-	/**@Test30
-	 * about this method clickOnAddCurrentCityandAddCurrentCity() 
-	 * @param : Map<String, String>
-	 * @description :Refresh the page and click on upper arrow button to hide the you may know section 
-	 * 				then click on add current city and fill data in the current city text field. 
-	 * @return : boolean
-	 * @author : Yaksha
-	 */
-	public boolean clickOnAddCurrentCityandAddCurrentCity(Map<String, String> expectedData) throws Exception {
-		return false;
-
-	}
-
-	/**@Test31
-	 * about this method clickOnAddSecondarySchoolandAddSchool() 
-	 * @param : Map<String, String>
-	 * @description :Refresh the page and click on upper arrow button to hide the you may know section 
-	 * 				then click on addSecondarySchoolButton and fill data in the schoolTextFieldPresentInsideSecondarySchoolTextField. 
-	 * @return : boolean
-	 * @author : Yaksha
-	 */
-	public boolean clickOnAddSecondarySchoolandAddSchool(Map<String, String> expectedData) throws Exception {
-		return false;
-
-	}
-
-	/**@Test32
-	 * about this method clickOnAddRelationshipStatusandAddRelationshipStatusAsSingle() 
-	 * @param : Map<String, String>
-	 * @description :Refresh the page and click on upper arrow button to hide the you may know section 
-	 * 				then click on addRelationshipStatusButton and Set the relationship status as single.
-	 * @return : boolean
-	 * @author : Yaksha
-	 */
-	public boolean clickOnAddRelationshipStatusandAddRelationshipStatusAsSingle(Map<String, String> expectedData) throws Exception {
-		return false;
-
-	}
-
-	/**@Test33
+	/**@Test20
 	 * about this method gotoThePreviousPageAndClickOnAccount() 
 	 * @param : null
 	 * @description : going to the previous page then click on leave page button and click on Account icon which is present at the top right corner
@@ -489,7 +338,7 @@ public class FaceBookPage extends StartupPage {
 	public boolean gotoThePreviousPageAndClickOnAccount() throws Exception {
 		return false;
 	}
-	/**@Test34
+	/**@Test21
 	 * about this method clickOnTheLogoutButton() 
 	 * @param : null
 	 * @description : Click on the logout button 
