@@ -1,7 +1,0 @@
-{
-	"dev":{
-		"url":"https://www.facebook.com/",
-		"pageloadtimeout":"90",
-		"implicitwaittime":"30"
-	}
-}
