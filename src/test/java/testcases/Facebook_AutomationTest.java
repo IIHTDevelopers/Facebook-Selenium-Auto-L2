@@ -154,7 +154,7 @@ public class Facebook_AutomationTest extends AppTestBase {
 	@Test(priority = 14, groups = {"sanity"}, description="close the \"signup\" page and verify the All Fields present in The Login Page or not")
 	public void verifyAllprsenceOfFieldAfterCloseTheSignupPage() throws Exception {	
 		FaceBookPageInstance = new FaceBookPage(driver);
-		Assert.assertTrue(FaceBookPageInstance.verifyAllpresentOfFieldAfterCloseTheSignupPage(), "Any of the elememt is not present, please check manually");
+		Assert.assertTrue(FaceBookPageInstance.verifyAllprsenceOfFieldAfterCloseTheSignupPage(), "Any of the elememt is not present, please check manually");
 		Assert.assertTrue(LocatorsFactoryInstance.getLoginButton(driver).isDisplayed(), " login button is not present in the signUp page, Please check manually");	
 	}
 	
