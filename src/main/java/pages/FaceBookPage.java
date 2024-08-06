@@ -259,13 +259,13 @@ public class FaceBookPage extends StartupPage {
 
 	
 	/**@test14
-	 * about this method verifyAllpresentOfFieldAfterCloseTheSignupPage() 
+	 * about this method verifyAllprsenceOfFieldAfterCloseTheSignupPage() 
 	 * @param : null
 	 * @description : close the sign up page and verify all fields is present in current page or not 
 	 * @return : true
 	 * @author : Yaksha
 	 */
-	public Boolean verifyAllpresentOfFieldAfterCloseTheSignupPage() throws Exception {
+	public Boolean verifyAllprsenceOfFieldAfterCloseTheSignupPage() throws Exception {
 		return null;
 	}
 
